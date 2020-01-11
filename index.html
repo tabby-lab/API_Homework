@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Quiz Time!</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="start">Begin Quiz</div>
+        <div id="quiz" style="display: none">
+            <div id="questions"><p>Questions</p></div>
+            <div id="timer">
+                <div id="counter"> 5 </div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+
+            </div>
+
+
+        </div>
+
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
