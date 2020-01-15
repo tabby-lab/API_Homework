@@ -1,22 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-
-    <title>Quiz Time!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="style.css">
-
+   
+    <title>Quiz Time!</title>
 </head>
 
 <body>
 
-    <div id="container">
-        <div id="start">Begin Quiz</div>
-        <div id="quiz" style="display: none">
-            <div id="questions"><p>Questions</p></div>
+
+    <div class="container">
+    <div id="question-container" class="hide">
+    <div id="question">Question</div>
+    <div id="answer-buttons" class="btn-grid">
+        <!-- <button class="btn">Choice 1</button>
+        <button class="btn">Choice 2</button>
+        <button class="btn">Choice 3</button>
+        <button class="btn">Choice 4</button> -->
+        </div>
+    </div>
+        <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+  
+
+
+        <!--<div id="quiz" style="display: none">
+            <div class="answers"></div>
             <div id="timer">
                 <div id="counter"> 5 </div>
             <div id="qImg"></div>
@@ -25,14 +41,18 @@
                 <div class="choice" id="B" onclick="checkAnswer('B')"></div>
                 <div class="choice" id="C" onclick="checkAnswer('C')"></div>
 
+                <button id="submit">Results</button>
+                <div id="results"></div>
             </div>
-
+        -->
 
         </div>
 
         
     </div>
-    <script src="script.js"></script>
+   
+        <script src="questions.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>

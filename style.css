@@ -1,70 +1,39 @@
-body{
-    font-size: 20px;
+*, *::before, *::after{
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#container{
-    margin : 20px auto;
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
     background-color: hotpink;
-    height: 300px;
-    width : 700px;
-    position: relative;
-}
-#start{
-    font-size: 1.5em;
-    font-weight: bolder;
-    word-break: break-all;
-    width:100px;
-    height:150px;
-    border : 2px solid fuchsia;
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-    left:300px;
-    top:50px;
-    color : fuchsia;
-    background-color: lightsalmon;
-}
-#start:hover{
-    border: 3px solid lightseagreen;
-    color : lightseagreen;
 }
 
-
-#question{
-    width:500px;
-    height : 125px;
-    position: absolute;
-    right:0;
-    top:0;
-}
-#question p{
-    margin : 0;
-    padding : 15px;
-    font-size: 1.25em;
-}
-
-#choices{
-    width : 480px;
-    position: absolute;
-    right : 0;
-    top : 125px;
-    padding : 10px
-}
-.choice{
-    display: inline-block;
-    width : 135px;
-    text-align: center;
-    border : 1px solid grey;
+.container { 
+    
+    background-color: limegreen;
     border-radius: 5px;
-    cursor: pointer;
-    padding : 5px;
-}
-.choice:hover{
-    border : 2px solid grey;
-    font-weight: bold;
+    padding: 10px;
 }
 
-#counter{
-    font-size: 3em;
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn:hover{
+    border-color:blue;
+}
+
+
+.hide{
+    display: none;
 }
