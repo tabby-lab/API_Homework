@@ -6,62 +6,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="stylesheet" href="style.css">
-    
+
+
     <title>Quiz Time!</title>
 </head>
 
 <body>
-       <div class="container hide"   id="score">
-            #Correct: <span id="correct" ></span>
-            #Wrong: <span  id="wrong"></span>
 
-       </div>
+    <div class="container hs">
+
+        <button id="highscores">View Highscores</button>
+    </div>
+
+   
+
+
+    <div class="container hide" id="score">
+        #Correct: <span id="correct"></span>
+        #Wrong: <span id="wrong"></span>
+
+    </div>
 
     <div class="container" id="main">
         <div id="count"></div>
-    <div id="question-container" class="hide">
-    <div id="question">Question</div>
-    <div id="answer-buttons" class="btn-grid">
-        
-        <!-- <button class="btn">Choice 1</button>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+
+                <!-- <button class="btn">Choice 1</button>
         <button class="btn">Choice 2</button>
         <button class="btn">Choice 3</button>
         <button class="btn">Choice 4</button> -->
 
-       
-        </div>
-    </div>
-        <div class="controls">
-            
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn">Next</button>
-  
 
-
-        <!--<div id="quiz" style="display: none">
-            <div class="answers"></div>
-            <div id="timer">
-                <div id="counter"> 5 </div>
-            <div id="qImg"></div>
-            <div id="choices">
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
-
-                <button id="submit">Results</button>
-                <div id="results"></div>
             </div>
-        -->
+        </div>
+        <div class="controls">
+
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn">Next</button>
+
+
+
+            <!-- <button id="reset">Home</button> -->
+
+
 
         </div>
 
-        
+
     </div>
-   
-        <script src="questions.js"></script>
-        <script src="script.js"></script>
+
+
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

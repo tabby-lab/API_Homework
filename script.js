@@ -8,6 +8,26 @@ var scoreBoard = document.getElementById('score')
 var mainDiv = document.getElementById('main')
 var correctSpan= document.getElementById('correct')
 var wrongSpan= document.getElementById('wrong')
+var form= document.querySelector('#form');
+
+
+
+
+// resetState.addEventListener('click', resetQuiz)
+// var timer=''
+// function resetQuiz(){
+//     questionElement=0
+//     counter=15 * questions.length
+//     correctSpan=0
+//     scoreBoard.innerHTML=''
+//     setNextQuestion()
+//     clearInterval(timer);
+//     timer= setInterval(function){
+//        counter--;
+        
+//     }
+// }
+
 
 let shuffledQuestions=[]
 let currentQuestionIndex, lastQuestion
@@ -20,9 +40,7 @@ nextButton.addEventListener('click', () => {
 
 let correctAnswer= 0
 let wrongAnswer=0
-//something is up with the classlist!
-//before begining all the functions think about the workflow of each
-//starting the quiz;change game to quiz
+
 function startGame() {
     console.log('started')
     startButton.classList.add('hide')
@@ -55,8 +73,11 @@ function startTimer() {
 
             correctSpan.innerHTML=correctAnswer
             wrongSpan.innerHTML=wrongAnswer
-            alert('sorry, out of time');
-            clearInterval(counter);
+       
+           // alert('sorry, out of time');
+             clearInterval(counter);
+            //returnHome.getElementById('home')
+            
         }
     }, 1000);
 }
@@ -124,26 +145,7 @@ answerButtonsElement.addEventListener("click", function (event) {
 );
 
 
-// function renderProgress(){
 
-//     for(let currentQuestionIndex = 0; currentQuestionIndex <= lastQuestion; currentQuestionIndex++){
-
-//         progress.innerHTML += "<div class='prog' id="+ currentQuestionIndex +"></div>";
-
-//     }
-
-// }
-
-//   if (answer.correct)
-//              button.dataset.correct = answer.correct
-
-//      button.addEventListener('click', selectAnswer)
-//     answerButtonsElement.appendChild(startButton)
-
-// function selectAnswer(event) {
-// answerButtonsElement.appendChild(startButton)
-
-// }
 //MAYBE USE?
 //quizContainer.innerHTML = output.join('');
 
